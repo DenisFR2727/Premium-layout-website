@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Jersey+10+Charted&family=Jersey+20&family=Lakki+Reddy&family=Nunito+Sans:opsz,wght@6..12,400;6..12,800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@600&family=REM:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300..700&display=swap");
+@media (max-width: 768px) {
+  #container {
+    width: 100%;
+  }
+  #container #menu-mobile {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #container #menu-mobile #mobile-text-menu {
+    display: block;
+    font-weight: 700px;
+    font-family: Poppins;
+    font-size: 18px;
+  }
+  #container #menu-mobile .burger-menu {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+  }
+  #container #menu-mobile nav {
+    display: none;
+  }
+  #container #menu-mobile #dropdown {
+    position: absolute;
+    display: block;
+    left: 1.5rem;
+    top: 105px;
+    display: none;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    padding: 20px;
+    border-radius: 0 10px 10px 0;
+    background: grey;
+  }
+  #container #menu-mobile #dropdown li {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+  #container #menu-mobile #dropdown li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    position: relative;
+  }
+  #container #menu-mobile #dropdown li a:before {
+    position: absolute;
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    left: 0;
+  }
+  #container #menu-mobile #dropdown li a:hover::before {
+    left: 10%;
+    right: 10%;
+    top: 25px;
+    width: 80%;
+    height: 2px;
+    background: #b00000;
+    transition: 1s all;
+  }
+  @keyframes list-dropdown {
+    0% {
+      opacity: 0;
+      max-height: 0;
+    }
+    100% {
+      opacity: 1;
+      max-height: 500px;
+    }
+  }
+  #container #menu-mobile #toggle[type=checkbox]:checked ~ #dropdown {
+    display: block;
+    font-family: Poppins;
+    opacity: 1;
+    max-height: 500px;
+    animation: list-dropdown 3s forwards;
+    transition: opacity 2s;
+  }
+}
+
+/*# sourceMappingURL=mobile.css.map */
