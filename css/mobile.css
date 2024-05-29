@@ -86,6 +86,104 @@
     max-height: 500px;
     animation: list-dropdown 3s forwards;
     transition: opacity 2s;
+    position: absolute;
+    z-index: 1;
+  }
+  #container #mobile-header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  #container #mobile-header #left-header .text .general-header-text {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  #container #mobile-header #left-header .text .text-sm {
+    word-wrap: break-word;
+    text-align: center;
+  }
+  #container #mobile-header #left-header .text .text-sm br {
+    display: none;
+  }
+}
+@media (max-width: 768px) and (max-width: 400px) {
+  #container #mobile-header #left-header .btn {
+    display: flex;
+    flex-direction: column;
+  }
+  #container #mobile-header #left-header .btn .choose {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+}
+@media (max-width: 768px) {
+  #container #mobile-header .right-header {
+    margin-right: 0px;
+  }
+  #container #mobile-header .right-header .rec-big,
+  #container #mobile-header .right-header .rec-left,
+  #container #mobile-header .right-header .rec-right {
+    display: none;
+  }
+  #container #mobile-header .right-header #mobile-header-img {
+    width: 100%;
+  }
+  .cloud-web-hosting {
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  .cloud-web-hosting .cloud-content {
+    flex-direction: column;
+  }
+  .cloud-web-hosting .cloud-content .left-block-text {
+    width: 100%;
+    text-align: start;
+  }
+  .cloud-web-hosting .cloud-content .left-block-text p {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .cloud-web-hosting .cloud-content .left-block-text span {
+    padding-top: 0;
+    padding-bottom: 30px;
+    text-align: start;
+    width: 100%;
+    margin-top: 34px;
+    color: #808080;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.8px;
+    text-align: justify;
+    word-wrap: break-word;
+  }
+  .cloud-web-hosting .cloud-content .right-block-cloud {
+    margin-left: 0;
+    margin-top: 0;
+  }
+  .cloud-web-hosting .cloud-content .right-block-cloud .top {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-top: 0;
+  }
+  .cloud-web-hosting .cloud-content .right-block-cloud .top img {
+    padding-top: 20px;
+  }
+  .cloud-web-hosting .cloud-content .right-block-cloud .bottom {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-top: 0;
+  }
+}
+@media (max-width: 400px) {
+  #container #menu-mobile #mobile-text-menu {
+    font-size: 15px;
   }
 }
 

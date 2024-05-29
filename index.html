@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,42 +9,94 @@
     </head>
     <body>
         <div id="container">
-            <div id="menu-mobile" class="menu">
-                <img src="./images/logo-menu.png" alt="" />
-                <p id="mobile-text-menu" class="text-menu">
-                    Premium Web Hosting
-                </p>
-                <label for="toggle" class="burger-menu">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </label>
-                <input type="checkbox" id="toggle" />
-                <ul id="dropdown">
-                    <li><a href="#">Our Services</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Blog&News</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Account</a></li>
-                </ul>
-                <nav>
-                    <li class="our-services"><a href="">Our Services</a></li>
-                    <ul>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Blog&News</a></li>
-                        <li><a href="">Contact</a></li>
+            <div class="header-top">
+                <div id="menu-mobile" class="menu">
+                    <img src="./images/logo-menu.png" alt="" />
+                    <p id="mobile-text-menu" class="text-menu">
+                        Premium Web Hosting
+                    </p>
+                    <label for="toggle" class="burger-menu">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </label>
+                    <input type="checkbox" id="toggle" />
+                    <ul id="dropdown">
+                        <li><a href="#">Our Services</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Blog&News</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Account</a></li>
                     </ul>
-                    <li class="account-nav">
-                        <a href="">Account</a>
-                    </li>
-                    <li class="phone">
-                        <img src="./images/phone.png" alt="" />
-                        <span>+2349067322844</span>
-                    </li>
-                </nav>
+                    <nav>
+                        <li class="our-services">
+                            <a href="">Our Services</a>
+                        </li>
+                        <ul>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Blog&News</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                        <li class="account-nav">
+                            <a href="">Account</a>
+                        </li>
+                        <li class="phone">
+                            <img src="./images/phone.png" alt="" />
+                            <span>+2349067322844</span>
+                        </li>
+                    </nav>
+                </div>
             </div>
-            <header></header>
+            <header id="mobile-header" class="header">
+                <div id="left-header" class="left-header">
+                    <div class="menu">
+                        <li><a href="#">Hosting</a></li>
+                        <li><a href="#" class="grey-link">Domain</a></li>
+                        <li><a href="#" class="grey-link">SEO</a></li>
+                        <li><a href="#" class="grey-link">Email</a></li>
+                    </div>
+                    <div class="text">
+                        <p class="general-header-text">
+                            Premium Web Hosting for Your Website
+                        </p>
+                        <p class="text-sm">
+                            Blazing fast web hosting for individuals and<br>businesses of all sizes backed by 24x7x365 Support.               
+                        </p>
+                    </div>
+                    <div class="btn">
+                        <button class="create">Create an Account</button>
+                        <button class="choose">Choose your plan</button>
+                    </div>
+                </div>
+                <div class="right-header">
+                    <img id="mobile-header-img" src="./images/header.png" alt="header" />
+                    <img class="rec-big" src="./images/rec-big.png" alt="rec-big">
+                    <img class="rec-left" src="./images/rec-left.png" alt="rec-left">
+                    <img class="rec-right" src="./images/rec-right.png" alt="rec-right">
+                </div>
+            </header>
+            <section class="cloud-web-hosting">
+                <div class="cloud-content">
+                    <div class="left-block-text">
+                        <p>True Cloud Web  Hosting</p>
+                        <span>True Cloud Web Hosting All of the hosting packages we offer are deployed instantly on our SSD powered cloud. We don’t use dedicated servers that operate on single pieces of hardware. Our entire infrastructure is built to be reliable, secure, and scalable.</br></span>
+                    </div>
+                    <div class="right-block-cloud">
+                        <div class="top">
+                            <img src="./images/cloud/cPanel_orange_RGB 1.png" alt="">
+                            <img src="./images/cloud/secured-by-Imunify360-green 1.png" alt="">
+                            <img src="./images/cloud/litespeed-logo 1.png" alt="">
+                        </div>
+                        <div class="bottom">
+                            <img src="./images/cloud/softaculous.png" alt="">
+                            <img src="./images/cloud/wordpress.png" alt="">
+                            <img src="./images/cloud/cloudflare.png" alt="">
+                        </div>
+                        
+                    </div>
+                </div>
+                  
+            </section>
         </div>
     </body>
-
 </html>
