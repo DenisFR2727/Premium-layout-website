@@ -358,5 +358,222 @@
                 }
             }
         }
+        .block-bottom-cloud {
+            display: flex;
+            justify-content: space-between;
+
+            .function-cloud {
+                text-align: center;
+                p {
+                    color: $black;
+                    padding-top: 12px;
+                    font-size: 20px;
+                    font-family: Poppins;
+                    font-weight: 700;
+                    word-wrap: break-word;
+                }
+                span {
+                    display: inline-block;
+                    width: 80%;
+                    color: $black;
+                    font-size: 12px;
+                    font-family: Poppins;
+                    font-weight: 300;
+                    word-wrap: break-word;
+                }
+            }
+        }
+    }
+    .packages {
+        display: flex;
+        justify-content: center;
+        padding-top: 133px;
+
+        .choose-package {
+            padding-left: 120px;
+            padding-right: 120px;
+
+            .ready-start {
+                padding-left: 125px;
+                padding-right: 81px;
+                text-align: center;
+                color: $black;
+                font-size: 50px;
+                font-family: Poppins;
+                font-weight: 600;
+                line-height: 60px;
+                word-wrap: break-word;
+            }
+            .text-choose {
+                text-align: center;
+                padding-top: 38px;
+                color: $black;
+                font-size: 25px;
+                font-family: Poppins;
+                font-weight: 400;
+                line-height: 25px;
+                word-wrap: break-word;
+            }
+            .month_or_year {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-top: 57px;
+                padding-left: 145px;
+                padding-right: 83px;
+                p {
+                    color: $black;
+                    font-size: 25px;
+                    font-family: Poppins;
+                    font-weight: 400;
+                    line-height: 25px;
+                    word-wrap: break-word;
+                }
+                span {
+                    padding: 7px 8px 7px 8px;
+                    border-radius: 8px;
+                    background: rgba(255, 232, 122, 1);
+                    color: black;
+                    font-size: 10px;
+                    font-family: Poppins;
+                    font-weight: 500;
+                    line-height: 9px;
+                    word-wrap: break-word;
+                    margin-left: 17px;
+                }
+                .btn-choose-package {
+                    background: $red;
+                    border-radius: 73px;
+                    padding: 10px 54px 10px 9px;
+                    margin-left: 31px;
+                    margin-right: 26px;
+                    .circle-btn {
+                        background: $white;
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 100%;
+                    }
+                    .circle-btn:active {
+                        transform: translateX(42px);
+                        transition: 1s all;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .select-package {
+                display: flex;
+                width: 100%;
+                justify-content: space-around;
+                padding-top: 71px;
+                .basic {
+                    width: 100%;
+                    text-align: center;
+                    color: $black;
+                    font-size: 30px;
+                    font-family: Poppins;
+                    font-weight: 600;
+                    line-height: 40px;
+                    word-wrap: break-word;
+                    list-style: none;
+                    padding-bottom: 7px;
+                    border-bottom: 2px solid $red;
+                }
+                .premium {
+                    width: 100%;
+                    text-align: center;
+                    color: $black;
+                    font-size: 30px;
+                    font-family: Poppins;
+                    font-weight: 600;
+                    line-height: 40px;
+                    word-wrap: break-word;
+                    list-style: none;
+                    padding-bottom: 7px;
+                    border-bottom: 2px solid rgba(196, 196, 196, 1);
+                }
+            }
+        }
+        .list-package {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 85px;
+
+            .package-section {
+                border: 1px solid rgba(196, 196, 196, 1);
+                border-radius: 15px;
+                .content {
+                    width: 299px;
+                    padding-top: 34px;
+                    padding-bottom: 48px;
+                    padding-left: 35px;
+                    padding-right: 29px;
+                    h2 {
+                        color: $black;
+                        font-size: 28px;
+                        font-family: Poppins;
+                        font-weight: 600;
+                        line-height: 25px;
+                        word-wrap: break-word;
+                    }
+                    .text {
+                        padding-top: 11px;
+                        padding-bottom: 28px;
+                        text-align: start;
+                        color: $black;
+                        font-size: 12px;
+                        font-family: Poppins;
+                        font-weight: 400;
+                        line-height: 18px;
+                        overflow-x: wrap;
+                        word-wrap: break-word;
+                    }
+                    .price {
+                        color: $black;
+                        font-size: 42px;
+                        font-family: Poppins;
+                        font-weight: 600;
+                        line-height: 32px;
+                        word-wrap: break-word;
+                    }
+                    .per-month {
+                        padding-top: 11px;
+                        color: $black;
+                        font-size: 14px;
+                        font-family: Poppins;
+                        font-weight: 300;
+                        line-height: 14px;
+                        word-wrap: break-word;
+                    }
+                    .shoose-plan {
+                        border: 2px solid $black;
+                        border-radius: 12px;
+                        margin-top: 35px;
+                        cursor: pointer;
+
+                        p {
+                            padding: 9px 60px 9px 56px;
+                        }
+                    }
+                    ul {
+                        padding-top: 35px;
+                        li {
+                            list-style: none;
+                            padding-bottom: 15px;
+                            color: #808080;
+                            font-size: 16px;
+                            font-family: Inter;
+                            font-weight: 700;
+                            line-height: 24px;
+                            word-wrap: break-word;
+                        }
+                        li:before {
+                            content: '\2714';
+                            padding-right: 24px;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
