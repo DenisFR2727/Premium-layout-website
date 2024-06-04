@@ -339,6 +339,30 @@
             }
         }
     }
+    // Footer
+    footer {
+        .menu-footer {
+            // display: flex;
+            flex-wrap: wrap;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+            // flex-direction: column;
+            .colum-menu-logo-text {
+                width: 100%;
+            }
+            .colum-menu-footer {
+                flex-direction: column;
+                li {
+                    padding-bottom: 10px;
+                }
+            }
+        }
+        .copyright {
+            padding-top: 30px;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+    }
 }
 
 @media (max-width: 400px) {

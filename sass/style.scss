@@ -18,7 +18,10 @@
     $black: rgba(0, 0, 0, 1);
     $white: rgba(255, 255, 255, 1);
     $red: #b00000;
-
+    @mixin inter-font {
+        font-family: Inter;
+        word-wrap: break-word;
+    }
     @mixin text-menu-nav {
         font-family: $main-font;
         color: $main-color;
@@ -240,15 +243,13 @@
             }
             .text-sm {
                 width: 100%;
-                // text-align: justify;
                 margin-top: 34px;
                 color: #808080;
                 font-size: 16px;
-                font-family: Inter;
                 font-weight: 400;
                 line-height: 28px;
                 letter-spacing: 0.8px;
-                word-wrap: break-word;
+                @include inter-font;
 
                 span {
                     display: block;
@@ -321,24 +322,20 @@
                 p {
                     color: #18191f;
                     font-size: 48px;
-                    font-family: Inter;
                     font-weight: 800;
                     line-height: 64px;
-                    word-wrap: break-word;
+                    @include inter-font;
                 }
                 span {
                     display: inline-block;
                     padding-top: 21px;
                     padding-bottom: 73px;
-
                     width: 100%;
-
                     color: #18191f;
                     font-size: 18px;
-                    font-family: Inter;
                     font-weight: 400;
                     line-height: 32px;
-                    word-wrap: break-word;
+                    @include inter-font;
                 }
             }
             .right-block-cloud {
@@ -563,10 +560,9 @@
                             padding-bottom: 15px;
                             color: #808080;
                             font-size: 16px;
-                            font-family: Inter;
                             font-weight: 700;
                             line-height: 24px;
-                            word-wrap: break-word;
+                            @include inter-font;
                         }
                         li:before {
                             content: '\2714';
@@ -602,19 +598,17 @@
             h2 {
                 color: #18191f;
                 font-size: 48px;
-                font-family: Inter;
                 font-weight: 800;
                 line-height: 64px;
-                word-wrap: break-word;
+                @include inter-font;
             }
             p {
                 padding-top: 8px;
                 color: #18191f;
                 font-size: 18px;
-                font-family: Inter;
                 font-weight: 400;
                 line-height: 32px;
-                word-wrap: break-word;
+                @include inter-font;
             }
         }
         .block-stories-1 {
@@ -640,10 +634,9 @@
                     padding-left: 16px;
                     color: $black;
                     font-size: 16px;
-                    font-family: Inter;
                     font-weight: 400;
                     line-height: 32px;
-                    word-wrap: break-word;
+                    @include inter-font;
                 }
             }
             .block-name {
@@ -653,23 +646,20 @@
                 .name {
                     color: #18191f;
                     font-size: 18px;
-                    font-family: Inter;
                     font-weight: 700;
                     line-height: 28px;
-                    word-wrap: break-word;
+                    @include inter-font;
                 }
                 .partner {
                     color: #969bab;
                     font-size: 14px;
-                    font-family: Inter;
                     font-weight: 500;
                     line-height: 24px;
-                    word-wrap: break-word;
+                    @include inter-font;
                 }
             }
         }
         .block-stories-2 {
-            // margin-top: 24px;
             width: 445px;
             position: absolute;
             right: 0;
@@ -692,10 +682,9 @@
                     padding-left: 16px;
                     color: $black;
                     font-size: 16px;
-                    font-family: Inter;
                     font-weight: 400;
                     line-height: 32px;
-                    word-wrap: break-word;
+                    @include inter-font;
                 }
             }
             .block-name {
@@ -705,18 +694,16 @@
                 .name {
                     color: #18191f;
                     font-size: 18px;
-                    font-family: Inter;
                     font-weight: 700;
                     line-height: 28px;
-                    word-wrap: break-word;
+                    @include inter-font;
                 }
                 .partner {
                     color: #969bab;
                     font-size: 14px;
-                    font-family: Inter;
                     font-weight: 500;
                     line-height: 24px;
-                    word-wrap: break-word;
+                    @include inter-font;
                 }
             }
         }
@@ -743,10 +730,9 @@
                     padding-left: 16px;
                     color: $black;
                     font-size: 16px;
-                    font-family: Inter;
                     font-weight: 400;
                     line-height: 32px;
-                    word-wrap: break-word;
+                    @include inter-font;
                 }
             }
             .block-name {
@@ -756,18 +742,16 @@
                 .name {
                     color: #18191f;
                     font-size: 18px;
-                    font-family: Inter;
                     font-weight: 700;
                     line-height: 28px;
-                    word-wrap: break-word;
+                    @include inter-font;
                 }
                 .partner {
                     color: #969bab;
                     font-size: 14px;
-                    font-family: Inter;
                     font-weight: 500;
                     line-height: 24px;
-                    word-wrap: break-word;
+                    @include inter-font;
                 }
             }
         }
@@ -804,19 +788,17 @@
             p:first-of-type {
                 color: #18191f;
                 font-size: 48px;
-                font-family: Inter;
                 font-weight: 800;
                 line-height: 64px;
-                word-wrap: break-word;
+                @include inter-font;
             }
             p {
                 width: 74%;
                 color: #18191f;
                 font-size: 18px;
-                font-family: Inter;
                 font-weight: 400;
                 line-height: 32px;
-                word-wrap: break-word;
+                @include inter-font;
             }
         }
         .nigerian-partners {
@@ -920,6 +902,94 @@
                 line-height: 24px;
                 word-wrap: break-word;
             }
+        }
+    }
+    //  Footer mixin
+    @mixin menu-footer-first {
+        color: white;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        @include inter-font;
+    }
+    @mixin menu-footer {
+        color: #e6e6e6;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 32px;
+        @include inter-font;
+    }
+    // Footer
+    footer {
+        background: $red;
+        margin-top: 110px;
+
+        .menu-footer {
+            display: flex;
+            justify-content: space-between;
+            padding-left: 104px;
+            padding-right: 115px;
+            .colum-menu-logo-text {
+                width: 24%;
+                list-style: none;
+                padding-top: 64px;
+                .text-footer {
+                    padding-top: 16px;
+                    text-align: start;
+                    color: #e6e6e6;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 32px;
+                    @include inter-font;
+                }
+            }
+            .colum-menu-footer {
+                flex-direction: column;
+                padding-top: 80px;
+                li {
+                    list-style: none;
+                    padding-bottom: 24px;
+                    a {
+                        position: relative;
+                        text-decoration: none;
+                        @include menu-footer();
+
+                        &:before {
+                            position: absolute;
+                            content: '';
+                            display: block;
+                            height: 2px;
+                            width: 0%;
+                            bottom: 0;
+                            left: 0;
+                        }
+                        &:hover:before {
+                            left: 10%;
+                            right: 10%;
+                            top: 25px;
+                            width: 80%;
+                            height: 2px;
+                            background: $white;
+                            transition: 1s all;
+                        }
+                    }
+                    &:first-of-type {
+                        a {
+                            @include menu-footer-first();
+                        }
+                    }
+                }
+            }
+        }
+        .copyright {
+            padding-left: 104px;
+            padding-top: 104px;
+            padding-bottom: 80px;
+            color: white;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 32px;
+            @include inter-font;
         }
     }
 }

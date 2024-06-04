@@ -168,17 +168,23 @@
   #container .cloud-web-hosting .cloud-content .right-block-cloud .top {
     display: flex;
     justify-content: space-evenly;
+    flex-direction: column;
     flex-wrap: wrap;
     padding-top: 0;
   }
   #container .cloud-web-hosting .cloud-content .right-block-cloud .top img {
-    padding-top: 20px;
+    padding: 20px;
   }
   #container .cloud-web-hosting .cloud-content .right-block-cloud .bottom {
     display: flex;
     justify-content: space-evenly;
+    flex-direction: column;
     flex-wrap: wrap;
     padding-top: 0;
+    margin-top: 0;
+  }
+  #container .cloud-web-hosting .cloud-content .right-block-cloud .bottom img {
+    padding: 20px;
   }
   #container .cloud-web-hosting .block-bottom-cloud {
     flex-direction: column;
@@ -191,6 +197,7 @@
     margin-left: 1.5rem;
     margin-right: 1.5rem;
     padding-top: 50px;
+    padding-bottom: 40px;
   }
   .packages .content_package {
     margin-left: 1.5rem;
@@ -251,6 +258,87 @@
     margin-left: 1.5rem;
     margin-right: 1.5rem;
     flex-direction: column;
+    padding-top: 0px;
+  }
+  .packages .list-package .package-section {
+    margin-top: 50px;
+  }
+  .packages .list-package .package-section .content h2 {
+    font-size: 24px;
+  }
+  .packages .list-package .package-section .content .price {
+    font-size: 20px;
+  }
+  .real-stories {
+    display: none;
+  }
+  .nigerian-websites {
+    padding-top: 0px;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    flex-direction: column;
+  }
+  .nigerian-websites .nigerian {
+    width: 100%;
+  }
+  .nigerian-websites .nigerian p:first-of-type {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .nigerian-websites .nigerian p {
+    padding-top: 20px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .nigerian-websites .nigerian-partners {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  .nigerian-websites .nigerian-partners img {
+    padding: 10px;
+  }
+  .get-touch {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    padding-bottom: 20px;
+  }
+  .get-touch .triangle-sm-1,
+  .get-touch .triangle-sm-2,
+  .get-touch .triangle-bg-3 {
+    display: none;
+  }
+  .get-touch .get-touch-text {
+    text-align: center;
+    padding: 30px;
+    font-size: 24px;
+    line-height: 40px;
+  }
+  .get-touch .get-touch-text br {
+    display: none;
+  }
+  footer .menu-footer {
+    flex-wrap: wrap;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  footer .menu-footer .colum-menu-logo-text {
+    width: 100%;
+  }
+  footer .menu-footer .colum-menu-footer {
+    flex-direction: column;
+  }
+  footer .menu-footer .colum-menu-footer li {
+    padding-bottom: 10px;
+  }
+  footer .copyright {
+    padding-top: 30px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 }
 @media (max-width: 400px) {
