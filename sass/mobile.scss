@@ -171,17 +171,23 @@
                     .top {
                         display: flex;
                         justify-content: space-evenly;
+                        flex-direction: column;
                         flex-wrap: wrap;
                         padding-top: 0;
                         img {
-                            padding-top: 20px;
+                            padding: 20px;
                         }
                     }
                     .bottom {
                         display: flex;
                         justify-content: space-evenly;
+                        flex-direction: column;
                         flex-wrap: wrap;
                         padding-top: 0;
+                        margin-top: 0;
+                        img {
+                            padding: 20px;
+                        }
                     }
                 }
             }
@@ -199,6 +205,8 @@
         margin-left: 1.5rem;
         margin-right: 1.5rem;
         padding-top: 50px;
+        padding-bottom: 40px;
+
         .content_package {
             margin-left: 1.5rem;
             margin-right: 1.5rem;
@@ -256,12 +264,79 @@
                 }
             }
         }
-
         .list-package {
             width: 299px;
             margin-left: 1.5rem;
             margin-right: 1.5rem;
             flex-direction: column;
+            padding-top: 0px;
+            .package-section {
+                margin-top: 50px;
+
+                .content {
+                    h2 {
+                        font-size: 24px;
+                    }
+                    .price {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+    // real-stories
+    .real-stories {
+        display: none;
+    }
+    .nigerian-websites {
+        padding-top: 0px;
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+        flex-direction: column;
+
+        .nigerian {
+            width: 100%;
+            p:first-of-type {
+                margin: 0 auto;
+                text-align: center;
+                font-size: 24px;
+                line-height: 30px;
+            }
+            p {
+                padding-top: 20px;
+                margin: 0 auto;
+                text-align: center;
+                font-size: 16px;
+                line-height: 25px;
+            }
+        }
+        .nigerian-partners {
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            img {
+                padding: 10px;
+            }
+        }
+    }
+    .get-touch {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        padding-bottom: 20px;
+
+        .triangle-sm-1,
+        .triangle-sm-2,
+        .triangle-bg-3 {
+            display: none;
+        }
+        .get-touch-text {
+            text-align: center;
+            padding: 30px;
+            font-size: 24px;
+            line-height: 40px;
+            br {
+                display: none;
+            }
         }
     }
 }
